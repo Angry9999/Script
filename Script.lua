@@ -12,10 +12,10 @@ end)
 
 MainSection:NewToggle("SuperHuman", "Go fast and jump height", function(state)
     if state then
-        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
     else
-        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     end
 end)
@@ -45,6 +45,9 @@ function clip()
 end
 
 noclip() -- to toggle noclip() and clip()
+end)
+MainSection:NewButton("İnfinite Yeild", "Open İnfinite Yeild", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 
@@ -114,4 +117,15 @@ local function ESP()
   end)
 end
 ESP()
+end)
+
+--CREDİT
+local Credit = Window:NewTab("Credit")
+local CreditSection = Credit:NewSection("Credit")
+
+CreditSection:NewButton("Made By r/angry099#1000", ".", function()
+    
+end)
+CreditSection:NewButton("https://discord.gg/FSfdZ724cS", ".", function()
+    
 end)
