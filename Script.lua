@@ -139,3 +139,8 @@ end)
 CreditSection:NewButton("https://discord.gg/FSfdZ724cS", ".", function()
     
 end)
+
+CreditSection:NewButton("Copy Discord Server Link", ".", function()
+    toclipboard("https://discord.gg/FSfdZ724cS")
+setclipboard("https://discord.gg/FSfdZ724cS")
+end)
