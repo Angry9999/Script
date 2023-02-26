@@ -136,7 +136,11 @@ local CreditSection = Credit:NewSection("Credit")
 CreditSection:NewButton("Made By r/angry099#1000", ".", function()
     
 end)
-CreditSection:NewButton("https://discord.gg/FSfdZ724cS", ".", function()
-    toclipboard("https://discord.gg/FSfdZ724cS"
-    setclipboard("https://discord.gg/FSfdZ724cS"
+CreditSection:NewButton("Click To Copy Discord Server", ".", function()
+    setclipboard("https://discord.gg/FSfdZ724cS")
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Successful", -- Required
+	Text = "Copied Discord Link", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
 end)
