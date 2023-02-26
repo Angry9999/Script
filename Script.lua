@@ -6,7 +6,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Icon = "rbxassetid://1234567890" -- Optional
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Angry Hub", "WhiteTheme")
+local Window = Library.CreateLib("Angry Hub", "LightTheme")
 
 --Main
 local Tab = Window:NewTab("Main")
