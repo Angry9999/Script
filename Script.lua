@@ -1,6 +1,12 @@
 wait(2)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Gui Loaded", -- Required
+	Text = "Gui installed successfully.", -- Required
+  Text = "Made By r/angry099#1000.", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Angry Hub", "BloodTheme")
+local Window = Library.CreateLib("Angry Hub", "WhiteTheme")
 
 --Main
 local Tab = Window:NewTab("Main")
@@ -8,6 +14,10 @@ local MainSection = Tab:NewSection("Main")
 
 MainSection:NewButton("Fly ( Press E)", "Press once, otherwise it may work poorly.", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Angry9999/FlyScript/main/Fly.lua'))()
+end)
+
+MainSection:NewButton("CtrlTP", "If you hold down ctrl and click somewhere, you will teleport there.", function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Angry9999/Ctrltp/main/ctrltp.lua'))()
 end)
 
 MainSection:NewToggle("SuperHuman", "Go fast and jump height", function(state)
@@ -46,7 +56,7 @@ end
 
 noclip() -- to toggle noclip() and clip()
 end)
-MainSection:NewButton("İnfinite Yeild", "Open İnfinite Yeild", function()
+MainSection:NewButton("Infinite Yeild", "Open İnfinite Yeild", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
