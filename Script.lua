@@ -1,6 +1,6 @@
 wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Angry Hub", "Sentinel")
+local Window = Library.CreateLib("Angry Hub", "BloodTheme")
 
 --Main
 local Tab = Window:NewTab("Main")
